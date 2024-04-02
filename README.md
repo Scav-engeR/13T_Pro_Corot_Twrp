@@ -1,5 +1,7 @@
 # TWRP for Xiaomi 13T Pro Corot
 
+![image](/home/ghiddra/Documents/WhatsApp Image 2024-04-02 at 9.13.59 AM.jpeg)
+
 This repository contains the TWRP recovery build environment for Xiaomi 13T Pro (code-named "Corot").
 
 ## About TWRP
