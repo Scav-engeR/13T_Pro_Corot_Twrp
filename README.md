@@ -40,7 +40,7 @@ Contributions to the project are welcome! Please fork the repository, make your 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+This project is licensed under the [GNU GENERAL PUBLIC LICENSE](LICENSE) - see the LICENSE file for details.
 
 ## Acknowledgments
 
