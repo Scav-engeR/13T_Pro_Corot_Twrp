@@ -1,0 +1,7 @@
+# Ignore the entire .repo directory
+.repo/
+
+# Ignore the out directory
+out/
+
+# Add other files/directories to ignore
