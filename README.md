@@ -41,7 +41,3 @@ Contributions to the project are welcome! Please fork the repository, make your 
 ## License
 
 This project is licensed under the [GNU GENERAL PUBLIC LICENSE](LICENSE) - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Thanks to all the contributors who have helped to build and maintain the TWRP for Xiaomi 13T Pro Corot.
