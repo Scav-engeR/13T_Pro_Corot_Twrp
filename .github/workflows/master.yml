@@ -1,0 +1,38 @@
+name: Build TWRP for Xiaomi 13T Pro Corot
+
+on:
+  push:
+    branches:
+      - master  # or 'master' if you use master as your primary branch
+  pull_request:
+    branches:
+      - master  # or 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up environment
+      run: |
+        sudo apt-get update && sudo apt-get install -y repo
+        mkdir -p ~/twrp
+        cd ~/twrp
+        repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1  
+        repo sync
+
+    - name: Build TWRP
+      run: |
+        cd ~/twrp
+        source build/envsetup.sh
+        lunch corot-eng  # Replace 'corot' with your device's actual codename if different
+        mka vendorbootimage
+
+    - name: Upload Recovery Image
+      uses: actions/upload-artifact@v3
+      with:
+        name: TWRP Recovery Image
+        path: out/target/product/corot/vendor_boot.img  # Adjust the path according to your build directory structure
