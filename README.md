@@ -18,21 +18,21 @@ Team Win Recovery Project (TWRP) is an open-source software custom recovery imag
    Make sure you have a proper Android build environment set up. You can follow the [Android source guide](https://source.android.com/setup/build/initializing).
 
 2. **Clone this repository**:
-git clone https://github.com/Scav-engeR/13T_Pro_Corot_Twrp.git
+$git clone https://github.com/Scav-engeR/13T_Pro_Corot_Twrp.git
 
 
 3. **Prepare the build environment**:
 Navigate to the root of the source code and prepare the environment.
-cd 13T_Pro_Corot_Twrp
-source build/envsetup.sh
+$cd 13T_Pro_Corot_Twrp
+$source build/envsetup.sh
 
 
 4. **Build the recovery image**:
-lunch omni_corot-eng
-mka recoveryimage
+$lunch corot-eng
+$mka vendorbootimage
 
 
-The resulting image (`recovery.img`) will be in the `out/target/product/corot` directory.
+The resulting image (`vendor_boot.img`) will be in the `out/target/product/corot` directory.
 
 ## Contributing
 
